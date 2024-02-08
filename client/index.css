@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  color: rgb(206, 99, 99);
+}
+
+.storiesDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 20px;
+}
+
+.card {
+  border: 3px solid rgb(24, 235, 24);
+  border-radius: 20px;
+  padding: 15px;
+  color: orange;
+}
+
+@media all and (max-width: 480px) {
+  .storiesDiv {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
